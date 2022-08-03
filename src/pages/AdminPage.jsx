@@ -1,5 +1,6 @@
 import React from "react";
 import { AdminContext } from "../contexts/AdminProvider";
+import { Link } from "react-router-dom";
 import {
   Container,
   Table,
@@ -9,11 +10,9 @@ import {
   TableRow,
 } from "@mui/material";
 import { Delete, Edit } from "@mui/icons-material";
-import { Link } from "react-router-dom";
 
 function AdminPage() {
-  const { getProducts, products, deleteProduct } =
-    React.useContext(AdminContext);
+  const { getProducts, products } = React.useContext(AdminContext);
 
   React.useEffect(() => {
     getProducts();
@@ -22,45 +21,26 @@ function AdminPage() {
   return (
     <div className="admin-page">
       <Container>
-        <h2>Админ панель</h2>
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>#</TableCell>
-              <TableCell>Название</TableCell>
+              <TableCell>№</TableCell>
+              <TableCell>Наименование</TableCell>
               <TableCell>Артикул</TableCell>
-              <TableCell>Цена</TableCell>
-              <TableCell>Вес</TableCell>
-
+              <TableCell>Масса</TableCell>
+              <TableCell>Стоимость</TableCell>
+              <TableCell>Фото товара</TableCell>
+              <TableCell>Редактировать</TableCell>
               <TableCell>Удалить</TableCell>
-              <TableCell>Редакт</TableCell>
-              <TableCell>Фото</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {products.map((item, index) => (
-              <TableRow key={item.id}>
-                <TableCell>{index + 1}</TableCell>
-                <TableCell>{item.name}</TableCell>
-                <TableCell>{item.aricul}</TableCell>
-                <TableCell>{item.price}</TableCell>
-                <TableCell>{item.weight}</TableCell>
-
-                <TableCell>
-                  <Delete onClick={() => deleteProduct(item.id)} />
-                </TableCell>
-                <TableCell>
-                  <Link to={`/admin/edit/${item.id}`}>
-                    <Edit />
-                  </Link>
-                </TableCell>
-                <TableCell>
-                  <img width={100} src={item.photo} alt="" />
-                </TableCell>
-              </TableRow>
+              <TableRow key={item.id}></TableRow>
             ))}
           </TableBody>
         </Table>
+        <Link to="/admin/add">Добавить новый товар</Link>
       </Container>
     </div>
   );

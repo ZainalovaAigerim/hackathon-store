@@ -1,18 +1,23 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import { Link } from "react-router-dom";
 
 function MenuNavbar() {
   return (
     <div>
       <Navbar bg="light" expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">LOGO</Navbar.Brand>
+          <Link className="logo" to="/">
+            <img
+              width={50}
+              src="https://t4.ftcdn.net/jpg/03/32/97/33/360_F_332973317_SyQf6OsDnTe4zH5cjFA2TsrEMUaVMNnf.jpg"
+              alt=""
+            />
+          </Link>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -20,19 +25,16 @@ function MenuNavbar() {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <div className="container">
-                <Link className="navbar-menu" to="/">
-                  Главная страница
-                </Link>
+              <Link className="menu-navbar" to="/">
+                Главная Страница
+              </Link>
 
-                <Link className="navbar-menu" to="/admin">
-                  Admin
-                </Link>
-
-                <Link className="navbar-menu" to="/contacts">
-                  Контакты
-                </Link>
-              </div>
+              <Link className="menu-navbar" to="/admin">
+                Панель управления
+              </Link>
+              <Link className="menu-navbar" to="/info">
+                О компании
+              </Link>
             </Nav>
             <Form className="d-flex">
               <Form.Control
@@ -41,7 +43,7 @@ function MenuNavbar() {
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Поиск</Button>
+              <Button variant="outline-secondary">Поиск</Button>
             </Form>
           </Navbar.Collapse>
         </Container>

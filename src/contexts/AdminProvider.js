@@ -10,7 +10,6 @@ const reducer = (state, action) => {
       products: action.payload,
     };
   }
-
   return state;
 };
 
@@ -18,6 +17,16 @@ function AdminProvider({ children }) {
   const [state, dispatch] = React.useReducer(reducer, {
     products: [],
   });
+
+  const addNewProduct = (newProduct) => {
+    fetch(productsApi, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newProduct),
+    });
+  };
 
   const getProducts = () => {
     fetch(productsApi)
@@ -31,7 +40,11 @@ function AdminProvider({ children }) {
       });
   };
 
-  const data = {};
+  const data = {
+    products: state.products,
+    getProducts,
+    addNewProduct,
+  };
 
   return <AdminContext.Provider value={data}>{children}</AdminContext.Provider>;
 }

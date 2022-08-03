@@ -1,3 +1,12 @@
 {
-  "products":[]
+  "products": [
+    {
+      "name": "dfg",
+      "barcode": "dsf",
+      "weight": "dfg",
+      "price": "24",
+      "photo": "sfsd",
+      "id": 1
+    }
+  ]
 }
