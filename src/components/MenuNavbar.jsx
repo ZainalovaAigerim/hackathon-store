@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 function MenuNavbar() {
   return (
@@ -36,6 +37,8 @@ function MenuNavbar() {
                 О компании
               </Link>
             </Nav>
+            {/* <ShoppingCartOutlinedIcon /> */}
+
             <Form className="d-flex">
               <Form.Control
                 type="search"

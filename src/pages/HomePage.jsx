@@ -8,16 +8,18 @@ import {
   CardMedia,
   Button,
   Typography,
+  Pagination,
 } from "@mui/material";
-
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { HomeContext } from "../contexts/HomeProvider";
 
 function HomePage() {
-  const { products, getProducts } = React.useContext(HomeContext);
+  const { products, getProducts, pagesCount, currentPage, setCurrentPage } =
+    React.useContext(HomeContext);
 
   React.useEffect(() => {
     getProducts();
-  }, []);
+  }, [currentPage]);
 
   return (
     <div className="home-page">
@@ -39,21 +41,29 @@ function HomePage() {
               <CardActionArea>
                 <CardMedia component="img" height={140} image={item.photo} />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     {item.name}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    {item.price}
+                    {item.price} сом
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Подробнее
-                </Button>
+                <AddShoppingCartIcon
+                  size="small"
+                  color="error"
+                ></AddShoppingCartIcon>
               </CardActions>
             </Card>
           ))}
+        </div>
+        <div className="pagination">
+          <Pagination
+            onChange={(_, newValue) => setCurrentPage(newValue)}
+            count={pagesCount}
+            variant="outlined"
+          />
         </div>
       </Container>
     </div>

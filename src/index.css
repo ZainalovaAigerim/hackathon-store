@@ -29,8 +29,23 @@ h2 {
   margin-top: 30px;
 }
 
+.add-new-product-link {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  padding: 7px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
 .products-card {
   width: 30%;
+  margin-top: 60px;
 }
 
 .products-card img {
@@ -41,12 +56,13 @@ h2 {
 .add-new-product button {
   color: gray;
   background-color: white;
+  border-color: gray;
   margin-top: 20px;
 }
 
-.add-new-product button :hover {
+.add-new-product button:hover {
   color: white;
-  background-color: grey;
+  background-color: #6c757d;
 }
 
 .contacts {
@@ -67,4 +83,80 @@ h2 {
   justify-content: center;
   column-gap: 10px;
   margin-top: 30px;
+}
+
+.edit-products-page form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 30px;
+}
+
+.edit-products-page .MuiButton-root {
+  color: gray;
+  background-color: white;
+  margin-top: 20px;
+  width: 40%;
+}
+
+.edit-products-page .MuiButton-root:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+.info-about-company {
+  margin-top: 50px;
+}
+
+.info-about-company h3,
+p,
+span,
+ul,
+h6 {
+  margin: auto 40px;
+}
+
+.info-about-company p {
+  margin-top: 30px;
+}
+
+.info-about-company h6 {
+  color: crimson;
+  margin-top: 35px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+@media all and (max-width: 795px) {
+  .products-card {
+    width: 45%;
+  }
+}
+
+@media all and (max-width: 592px) {
+  .products-card {
+    width: 75%;
+  }
+  .products {
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 800px) {
+  Table {
+    width: 95%;
+  }
+}
+
+@media all and(max-width: 1000px) {
+  .info-about-company h3,
+  span,
+  ul,
+  h6 {
+    margin: auto 20px;
+  }
 }
