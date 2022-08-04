@@ -5,9 +5,12 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import { Badge, IconButton } from "@mui/material";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { HomeContext } from "../contexts/HomeProvider";
 
 function MenuNavbar() {
+  const { basketCount } = React.useContext(HomeContext);
   return (
     <div>
       <Navbar bg="light" expand="lg">
@@ -48,6 +51,13 @@ function MenuNavbar() {
               />
               <Button variant="outline-secondary">Поиск</Button>
             </Form>
+            <Link to="/basket">
+              <IconButton>
+                <Badge badgeContent={basketCount} color="primary">
+                  <ShoppingCartIcon />
+                </Badge>
+              </IconButton>
+            </Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>
