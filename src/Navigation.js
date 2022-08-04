@@ -8,6 +8,7 @@ import InfoPage from "./pages/InfoPage";
 import AdminProvider from "./contexts/AdminProvider";
 import HomeProvider from "./contexts/HomeProvider";
 import Footer from "./components/Footer";
+import BasketPage from "./pages/BasketPage";
 import EditProductsPage from "./pages/EditProductsPage";
 
 function Navigation() {
@@ -21,6 +22,7 @@ function Navigation() {
             <Route path="/admin" element={<AdminPage />} />
             <Route path="/admin/add" element={<AddProducts />} />
             <Route path="/info" element={<InfoPage />} />
+            <Route path="/basket" element={<BasketPage />} />
             <Route path="/admin/edit/:id" element={<EditProductsPage />} />
           </Routes>
           <Footer />
