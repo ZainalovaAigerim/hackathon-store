@@ -175,6 +175,10 @@ function HomeProvider({ children }) {
     addProductToBasket,
     setMinMax,
     getBasketCount,
+    pagesCount,
+    currentPage,
+    getProducts,
+    setCurrentPage,
   };
   return <HomeContext.Provider value={data}>{children}</HomeContext.Provider>;
 }

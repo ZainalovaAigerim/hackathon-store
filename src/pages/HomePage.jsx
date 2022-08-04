@@ -9,8 +9,9 @@ import {
   Button,
   Typography,
   Slider,
+  Pagination,
 } from "@mui/material";
-
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { HomeContext } from "../contexts/HomeProvider";
 
 function HomePage() {
@@ -60,11 +61,11 @@ function HomePage() {
               <CardActionArea>
                 <CardMedia component="img" height={140} image={item.photo} />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     {item.name}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    {item.price}
+                    {item.price} сом
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -78,6 +79,13 @@ function HomePage() {
               </CardActions>
             </Card>
           ))}
+        </div>
+        <div className="pagination">
+          <Pagination
+            onChange={(_, newValue) => setCurrentPage(newValue)}
+            count={pagesCount}
+            variant="outlined"
+          />
         </div>
       </Container>
     </div>

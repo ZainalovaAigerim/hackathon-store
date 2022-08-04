@@ -1,20 +1,68 @@
 {
   "products": [
     {
-      "name": "dfg",
-      "barcode": "dsf",
-      "weight": "dfg",
-      "price": 24,
-      "photo": "sfsd",
-      "id": 1
+      "name": "Обложка для плашета «Carnet»",
+      "barcode": "FHG567",
+      "weight": "0.500",
+      "price": 2500,
+      "photo": "https://static.tildacdn.com/tild6338-3831-4334-b365-343965393562/14432770907_d8dc8e3fb4_o.jpg",
+      "id": 3
     },
     {
-      "name": "Team",
-      "barcode": "45664441",
-      "weight": "350g",
-      "price": 550,
-      "photo": "https://colapsar.ru/upload/resize_cache/iblock/73e/215_215_1/73edaf89841231c1782c34540e6d6e41.jpg",
-      "id": 2
+      "name": "Часы «Kruka»",
+      "barcode": "BL345",
+      "weight": "0,750",
+      "price": "3500",
+      "photo": "https://static.tildacdn.com/tild3734-3131-4464-b663-643166653032/TID_Product_Black_011.jpg",
+      "id": 4
+    },
+    {
+      "name": "Подушка \"Trema\"",
+      "barcode": "BVL56f",
+      "weight": "0.500",
+      "price": 800,
+      "photo": "https://www.domilfo.ru/wa-data/public/shop/products/86/15/41586/images/81433/podushka_dekorativnaya_iz_poliestera_MIOLETTO_DP-8-3_43h43_62569dc9238de.jpgnw5re32.970x0@2x.jpeg",
+      "id": 5
+    },
+    {
+      "name": "Глиняный бюст антилопы",
+      "barcode": "gjr07398",
+      "weight": "1",
+      "price": 4500,
+      "photo": "https://static.tildacdn.com/tild3138-6531-4565-b432-663163623962/14193932991_de304ba1.jpg",
+      "id": 6
+    },
+    {
+      "name": "Будильник «Alise»",
+      "barcode": "bdlk458BLK",
+      "weight": "0.900",
+      "price": 1800,
+      "photo": "https://cdn1.ozone.ru/s3/multimedia-o/c1200/6013045884.jpg",
+      "id": 7
+    },
+    {
+      "name": "Подушка \"Rabbi\"",
+      "barcode": "PDSHKRB",
+      "weight": "0.750",
+      "price": 1300,
+      "photo": "https://static.tildacdn.com/tild6638-6665-4065-b730-343634313965/10173649646_8b5902ca4d_o.jpg",
+      "id": 8
+    },
+    {
+      "name": "Кофейный чайник «Stuka»",
+      "barcode": "WHT2300",
+      "weight": "1000",
+      "price": 2300,
+      "photo": "https://static.tildacdn.com/tild3539-6365-4665-b061-666463613235/14013247928_e74614e90b_h.jpg",
+      "id": 9
+    },
+    {
+      "name": "Камера «Leica»",
+      "barcode": "KMRBLK",
+      "weight": "1000",
+      "price": 5300,
+      "photo": "https://www.ixbt.com/img/n1/news/2022/0/5/Leica_M11_silver_front_with_lens_LoRes_RGB_2_large.jpeg",
+      "id": 10
     }
   ]
 }

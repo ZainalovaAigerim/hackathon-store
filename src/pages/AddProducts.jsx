@@ -63,9 +63,10 @@ function AddProducts() {
           />
           <TextField
             value={price}
-            onChange={(e) => setPrice(e.target.value)}
+            onChange={(e) => setPrice(parseInt(e.target.value))}
             label="Стоимость"
             variant="standard"
+            type="number"
           />
           <TextField
             value={photo}

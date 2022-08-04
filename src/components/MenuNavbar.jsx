@@ -40,6 +40,8 @@ function MenuNavbar() {
                 О компании
               </Link>
             </Nav>
+            {/* <ShoppingCartOutlinedIcon /> */}
+
             <Form className="d-flex">
               <Form.Control
                 type="search"
