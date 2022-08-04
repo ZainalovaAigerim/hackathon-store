@@ -8,16 +8,27 @@ import {
   CardMedia,
   Button,
   Typography,
+  Slider,
 } from "@mui/material";
 
 import { HomeContext } from "../contexts/HomeProvider";
 
 function HomePage() {
-  const { products, getProducts } = React.useContext(HomeContext);
+  const {
+    products,
+    getProducts,
+    filterByPrice,
+    setFilterByPrice,
+    pagesCount,
+    currentPage,
+    setCurrentPage,
+    addProductToBasket,
+    minmax,
+  } = React.useContext(HomeContext);
 
   React.useEffect(() => {
     getProducts();
-  }, []);
+  }, [filterByPrice, currentPage]);
 
   return (
     <div className="home-page">
@@ -33,6 +44,16 @@ function HomePage() {
           Мы любим создавать особенные и уникальные вещи для украшения вашей
           жизни и дома
         </h2>
+        <div className="filter-block">
+          <h4>Фильтрация по цене</h4>
+          <Slider
+            max={minmax[1]}
+            min={minmax[0]}
+            valueLabelDisplay="auto"
+            value={filterByPrice}
+            onChange={(_, newValue) => setFilterByPrice(newValue)}
+          />
+        </div>
         <div className="products">
           {products.map((item) => (
             <Card key={item.id} className="products-card">
@@ -48,8 +69,11 @@ function HomePage() {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
-                  Подробнее
+                <Button
+                  onClick={() => addProductToBasket(item)}
+                  variant="outlined"
+                >
+                  Добавить в корзину
                 </Button>
               </CardActions>
             </Card>

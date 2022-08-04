@@ -4,9 +4,17 @@
       "name": "dfg",
       "barcode": "dsf",
       "weight": "dfg",
-      "price": "24",
+      "price": 24,
       "photo": "sfsd",
       "id": 1
+    },
+    {
+      "name": "Team",
+      "barcode": "45664441",
+      "weight": "350g",
+      "price": 550,
+      "photo": "https://colapsar.ru/upload/resize_cache/iblock/73e/215_215_1/73edaf89841231c1782c34540e6d6e41.jpg",
+      "id": 2
     }
   ]
 }
