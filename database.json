@@ -63,6 +63,30 @@
       "price": 5300,
       "photo": "https://www.ixbt.com/img/n1/news/2022/0/5/Leica_M11_silver_front_with_lens_LoRes_RGB_2_large.jpeg",
       "id": 10
+    },
+    {
+      "name": "Картина (ГРЭСАСЕН) бабочка",
+      "barcode": "HRNE84",
+      "weight": "0.460",
+      "price": 1700,
+      "photo": "https://eurostyle.kg/files/products/503.718.66.960x580.JPG?bfd447a120574e45ca453e14caf7e01f",
+      "id": 11
+    },
+    {
+      "name": "Искусственное растение в горшке (ФЕЙКА) душица",
+      "barcode": "VGILV09",
+      "weight": "1.2",
+      "price": 490,
+      "photo": "https://eurostyle.kg/files/products/303.751.77_1.960x580.JPG?5527edd93090c5412156768b72cb76cc",
+      "id": 12
+    },
+    {
+      "name": "Искусственное растение в горшке (ФЕЙКА)",
+      "barcode": "svdsk",
+      "weight": "78",
+      "price": 7878,
+      "photo": "https://eurostyle.kg/files/products/803.719.59.960x580.JPG?d5d5a31b9ead553bd9a07b14e1b21a8e",
+      "id": 13
     }
   ]
 }

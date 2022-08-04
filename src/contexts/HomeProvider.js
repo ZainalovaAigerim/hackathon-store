@@ -18,12 +18,12 @@ function HomeProvider({ children }) {
     products: [],
   });
 
-  const limit = 6;
+  const limit = 9;
   const [pagesCount, setPagesCount] = React.useState(1);
   const [currentPage, setCurrentPage] = React.useState(1);
 
   const getProducts = () => {
-    fetch(`${productsApi}?q_limit=${limit}&_page=${currentPage}`)
+    fetch(`${productsApi}?q&_limit=${limit}&_page=${currentPage}`)
       .then((res) => {
         let count = Math.ceil(res.headers.get("X-Total-Count") / limit);
         setPagesCount(count);
