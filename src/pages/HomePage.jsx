@@ -48,7 +48,7 @@ function HomePage() {
           жизни и дома
         </h2>
         <div className="filter-block">
-          <h5>Фильтр</h5>
+          <h5>Сортировка по цене:</h5>
           <Slider
             max={minmax[1]}
             min={minmax[0]}

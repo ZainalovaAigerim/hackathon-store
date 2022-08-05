@@ -16,24 +16,19 @@
 
 .menu-navbar {
   padding-left: 10px;
-  
+
   padding-left: 15px;
 }
 
 a {
   color: rgb(128, 128, 128) !important;
   text-decoration: none !important;
-  
-}
-
-h2 {
-  text-align: center;
-  padding-top: 10px;
-  font-weight: 500 !important;
 }
 
 .home-page h2 {
-  margin-top: 200px;
+  text-align: center;
+  margin-top: 180px;
+  font-weight: 500 !important;
 }
 
 .logo {
@@ -64,7 +59,6 @@ h2 {
   margin-top: 16px;
   padding: 7px;
   font-size: 20px;
-  
 }
 
 .products {
@@ -141,9 +135,12 @@ h2 {
 
 .info-about-company h3,
 p,
-span,
 ul,
 h6 {
+  margin: auto 40px;
+}
+
+.info-span {
   margin: auto 40px;
 }
 
@@ -153,7 +150,6 @@ h6 {
 
 .info-about-company h6 {
   color: crimson;
-  margin-top: 35px;
 }
 
 .pagination {
@@ -167,16 +163,19 @@ span .MuiBadge-badge {
 }
 
 .filter-block {
-  width: 200px;
+  width: 190px;
+  margin-top: 55px;
 }
 
 .filter-block h5 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .filter-block .MuiSlider-root {
   color: crimson;
+  margin-top: 18px;
+  width: 170px;
 }
 
 .filter-block .MuiSlider-thumb {

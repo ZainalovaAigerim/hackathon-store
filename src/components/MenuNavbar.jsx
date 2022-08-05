@@ -8,7 +8,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { Badge, IconButton } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { HomeContext } from "../contexts/HomeProvider";
-import SearchIcon from "@mui/icons-material/Search";
+
 function MenuNavbar() {
   const { basketCount, setSearchWord, searchWord, getProducts } =
     React.useContext(HomeContext);
