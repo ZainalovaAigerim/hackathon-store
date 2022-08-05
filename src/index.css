@@ -1,11 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
 
+#root {
+  background-image: url(https://images.pexels.com/photos/4386350/pexels-photo-4386350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  min-height: 800px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .menu-navbar {
+<<<<<<< HEAD
   padding-left: 10px;
   
+=======
+  padding-left: 15px;
+>>>>>>> 7e09dcc0c7a3bff3d9919a6cbbf0c0fbd29186f7
 }
 
 a {
@@ -20,8 +35,23 @@ h2 {
   font-weight: 500 !important;
 }
 
+.home-page h2 {
+  margin-top: 200px;
+}
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+
 .market-logo {
-  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  column-gap: 50px;
+}
+.market-logo img {
+  width: 50%;
+  height: 400px;
 }
 
 .add-new-product form {
@@ -70,7 +100,7 @@ h2 {
 }
 
 .contacts {
-  background-color: rgb(240, 240, 240);
+  /* background-color: rgb(240, 240, 240); */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -135,6 +165,28 @@ h6 {
   margin-top: 35px;
 }
 
+span .MuiBadge-badge {
+  background-color: lightcoral;
+}
+
+.filter-block {
+  width: 200px;
+}
+
+.filter-block h5 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.filter-block .MuiSlider-root {
+  color: crimson;
+}
+
+.filter-block .MuiSlider-thumb {
+  width: 15px;
+  height: 15px;
+}
+
 @media all and (max-width: 795px) {
   .products-card {
     width: 45%;
@@ -147,6 +199,34 @@ h6 {
   }
   .products {
     justify-content: center;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .products-card {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 932px) {
+  .market-logo {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 932px) {
+  .market-logo img {
+    height: 570px;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 819px) {
+  .market-logo img {
+    object-fit: contain;
+    height: 500px;
+    width: 100%;
   }
 }
 

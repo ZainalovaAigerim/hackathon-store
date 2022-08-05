@@ -14,9 +14,16 @@ function Footer() {
         соцсетях.
       </h4>
       <div className="social-media-icons">
-        <img src={instagramIcon} alt="" />
-        <img src={messengerIcon} alt="" />
-        <img src={twitterIcon} alt="" />
+        <a target="_blank" href="https://www.instagram.com/">
+          {" "}
+          <img src={instagramIcon} alt="" />
+        </a>
+        <a target="_blank" href="https://www.messenger.com/">
+          <img src={messengerIcon} alt="" />
+        </a>
+        <a target="_blank" href="https://www.twitter.com/">
+          <img src={twitterIcon} alt="" />
+        </a>
       </div>
     </div>
   );

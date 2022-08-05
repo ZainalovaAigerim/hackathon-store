@@ -22,11 +22,7 @@ function MenuNavbar() {
       <Navbar bg="light" expand="lg">
         <Container fluid>
           <Link className="logo" to="/">
-            <img
-              width={50}
-              src="https://t4.ftcdn.net/jpg/03/32/97/33/360_F_332973317_SyQf6OsDnTe4zH5cjFA2TsrEMUaVMNnf.jpg"
-              alt=""
-            />
+            StayHome
           </Link>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">

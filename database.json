@@ -61,10 +61,11 @@
       "barcode": "KMRBLK",
       "weight": "1000",
       "price": 5300,
-      "photo": "https://www.ixbt.com/img/n1/news/2022/0/5/Leica_M11_silver_front_with_lens_LoRes_RGB_2_large.jpeg",
+      "photo": "https://static.turbosquid.com/Preview/2014/07/07__15_23_21/Leica_M3_00.jpgbb3a01bd-34ff-4a8e-9d76-607ac73f2713Large.jpg",
       "id": 10
     },
     {
+<<<<<<< HEAD
       "name": "Настольный биокамин \"Большой огонь\"",
       "barcode": "677665577",
       "weight": "2.3",
@@ -127,6 +128,30 @@
       "price": 234,
       "photo": "sdf",
       "id": 18
+=======
+      "name": "Картина (ГРЭСАСЕН) бабочка",
+      "barcode": "HRNE84",
+      "weight": "0.460",
+      "price": 1700,
+      "photo": "https://eurostyle.kg/files/products/503.718.66.960x580.JPG?bfd447a120574e45ca453e14caf7e01f",
+      "id": 11
+    },
+    {
+      "name": "Искусственное растение (ФЕЙКА) душица",
+      "barcode": "VGILV09",
+      "weight": "1.2",
+      "price": 490,
+      "photo": "https://eurostyle.kg/files/products/303.751.77_1.960x580.JPG?5527edd93090c5412156768b72cb76cc",
+      "id": 12
+    },
+    {
+      "name": "Искусственное растение в горшке (ФЕЙКА)",
+      "barcode": "svdsk",
+      "weight": "78",
+      "price": 7878,
+      "photo": "https://eurostyle.kg/files/products/803.719.59.960x580.JPG?d5d5a31b9ead553bd9a07b14e1b21a8e",
+      "id": 13
+>>>>>>> 7e09dcc0c7a3bff3d9919a6cbbf0c0fbd29186f7
     }
   ]
 }

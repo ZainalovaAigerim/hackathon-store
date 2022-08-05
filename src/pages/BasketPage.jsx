@@ -12,6 +12,7 @@ import { HomeContext } from "../contexts/HomeProvider";
 import HighlightOffRoundedIcon from "@mui/icons-material/HighlightOffRounded";
 
 function BasketPage() {
+<<<<<<< HEAD
   const {
     basketProducts,
     getProductsFromBasket,
@@ -19,6 +20,11 @@ function BasketPage() {
     getProducts,
   } = React.useContext(HomeContext);
   console.log(basketProducts);
+=======
+  const { basketProducts, getProductsFromBasket } =
+    React.useContext(HomeContext);
+
+>>>>>>> 7e09dcc0c7a3bff3d9919a6cbbf0c0fbd29186f7
   React.useEffect(() => {
     getProductsFromBasket();
   }, []);
@@ -34,10 +40,10 @@ function BasketPage() {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>Название</TableCell>
+              <TableCell>Наименование</TableCell>
               <TableCell>Фото</TableCell>
-              <TableCell>Цена</TableCell>
-              <TableCell>Кол.во</TableCell>
+              <TableCell>Стоимость</TableCell>
+              <TableCell>Количество</TableCell>
               <TableCell>Сумма</TableCell>
               <TableCell>Удалить</TableCell>
             </TableRow>
