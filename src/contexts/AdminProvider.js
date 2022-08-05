@@ -32,6 +32,8 @@ function AdminProvider({ children }) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(newProduct),
+    }).then(() => {
+      getProducts();
     });
   };
 

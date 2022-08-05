@@ -153,6 +153,26 @@ function HomeProvider({ children }) {
     }
   };
 
+  const deleteProductFromBasket = (id) => {
+    let basket = JSON.parse(localStorage.getItem("basket"));
+    console.log(basket);
+
+    basket.products = basket.products.filter((item) => {
+      //todo #1 вернуть все продукты кроме того id item совпадает айди из аргумента функции
+      return item.id !== id;
+    });
+
+    // заново считает общую стоимость всех товаров в корзине
+    basket.totalPrice = basket.products.reduce((prev, item) => {
+      return prev + item.subPrice;
+    }, 0);
+    // обратно закидывает товары в локал сторэдж
+    localStorage.setItem("basket", JSON.stringify(basket));
+
+    //todo #1 вызвать функцию стягивания корзины из лк get
+    getProductsFromBasket();
+  };
+
   React.useEffect(() => {
     getPrices();
     getBasketCount();
@@ -179,6 +199,7 @@ function HomeProvider({ children }) {
     currentPage,
     getProducts,
     setCurrentPage,
+    deleteProductFromBasket,
   };
   return <HomeContext.Provider value={data}>{children}</HomeContext.Provider>;
 }

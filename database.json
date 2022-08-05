@@ -65,6 +65,38 @@
       "id": 10
     },
     {
+      "name": "Настольный биокамин \"Большой огонь\"",
+      "barcode": "677665577",
+      "weight": "2.3",
+      "price": 14500,
+      "photo": "https://colapsar.ru/upload/resize_cache/iblock/a74/215_215_1/a741c65c94cebc1c6dad6af4a0c71d60.jpg",
+      "id": 11
+    },
+    {
+      "name": "Мини кондиционер \"Арктика\"",
+      "barcode": "87878777",
+      "weight": "0.8",
+      "price": 2700,
+      "photo": "https://colapsar.ru/upload/resize_cache/iblock/73e/215_215_1/73e25dd9e0de83be6878a2427fbbd1a0.jpg",
+      "id": 12
+    },
+    {
+      "name": "Деревянный поднос",
+      "barcode": "09000987",
+      "weight": "0.250",
+      "price": 700,
+      "photo": "https://colapsar.ru/upload/resize_cache/iblock/569/215_215_1/569d6c2b2cac7d53fbec5c3cd42c4c10.jpg",
+      "id": 13
+    },
+    {
+      "name": "Умный горшок",
+      "barcode": "23434455",
+      "weight": "300",
+      "price": 1500,
+      "photo": "https://colapsar.ru/upload/resize_cache/iblock/73e/215_215_1/73edaf89841231c1782c34540e6d6e41.jpg",
+      "id": 14
+    },
+    {
       "name": "Картина (ГРЭСАСЕН) бабочка",
       "barcode": "HRNE84",
       "weight": "0.460",
