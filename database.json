@@ -65,7 +65,6 @@
       "id": 10
     },
     {
-<<<<<<< HEAD
       "name": "Настольный биокамин \"Большой огонь\"",
       "barcode": "677665577",
       "weight": "2.3",
@@ -98,37 +97,6 @@
       "id": 14
     },
     {
-      "name": "test",
-      "barcode": "sdflkj",
-      "weight": "23",
-      "price": 333,
-      "photo": "sldfkj",
-      "id": 15
-    },
-    {
-      "name": "sdf",
-      "barcode": "sdf",
-      "weight": "234",
-      "price": 234,
-      "photo": "sdf",
-      "id": 16
-    },
-    {
-      "name": "tttt",
-      "barcode": "sdf",
-      "weight": "34",
-      "price": 2342,
-      "photo": "sdf",
-      "id": 17
-    },
-    {
-      "name": "sdf",
-      "barcode": "sdf",
-      "weight": "234",
-      "price": 234,
-      "photo": "sdf",
-      "id": 18
-=======
       "name": "Картина (ГРЭСАСЕН) бабочка",
       "barcode": "HRNE84",
       "weight": "0.460",
@@ -151,7 +119,6 @@
       "price": 7878,
       "photo": "https://eurostyle.kg/files/products/803.719.59.960x580.JPG?d5d5a31b9ead553bd9a07b14e1b21a8e",
       "id": 13
->>>>>>> 7e09dcc0c7a3bff3d9919a6cbbf0c0fbd29186f7
     }
   ]
 }

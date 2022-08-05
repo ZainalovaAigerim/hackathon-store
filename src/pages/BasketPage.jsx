@@ -12,19 +12,14 @@ import { HomeContext } from "../contexts/HomeProvider";
 import HighlightOffRoundedIcon from "@mui/icons-material/HighlightOffRounded";
 
 function BasketPage() {
-<<<<<<< HEAD
   const {
     basketProducts,
     getProductsFromBasket,
     deleteProductFromBasket,
     getProducts,
   } = React.useContext(HomeContext);
-  console.log(basketProducts);
-=======
-  const { basketProducts, getProductsFromBasket } =
-    React.useContext(HomeContext);
+  // console.log(basketProducts);
 
->>>>>>> 7e09dcc0c7a3bff3d9919a6cbbf0c0fbd29186f7
   React.useEffect(() => {
     getProductsFromBasket();
   }, []);
