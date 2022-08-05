@@ -6,12 +6,11 @@ import {
   CardContent,
   CardActionArea,
   CardMedia,
-  Button,
   Typography,
   Slider,
   Pagination,
 } from "@mui/material";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import { HomeContext } from "../contexts/HomeProvider";
 
 function HomePage() {
@@ -36,8 +35,11 @@ function HomePage() {
       <Container>
         <div className="market-logo">
           <img
-            width={250}
-            src="https://t4.ftcdn.net/jpg/03/32/97/33/360_F_332973317_SyQf6OsDnTe4zH5cjFA2TsrEMUaVMNnf.jpg"
+            src="https://images.pexels.com/photos/6707628/pexels-photo-6707628.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            alt=""
+          />
+          <img
+            src="https://images.pexels.com/photos/3049121/pexels-photo-3049121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
           />
         </div>
@@ -46,7 +48,7 @@ function HomePage() {
           жизни и дома
         </h2>
         <div className="filter-block">
-          <h4>Фильтрация по цене</h4>
+          <h5>Фильтр</h5>
           <Slider
             max={minmax[1]}
             min={minmax[0]}
@@ -70,12 +72,10 @@ function HomePage() {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button
+                <AddShoppingCartOutlinedIcon
                   onClick={() => addProductToBasket(item)}
                   variant="outlined"
-                >
-                  Добавить в корзину
-                </Button>
+                />
               </CardActions>
             </Card>
           ))}

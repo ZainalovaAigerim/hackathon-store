@@ -1,5 +1,5 @@
 import React from "react";
-import { act } from "react-dom/test-utils";
+
 import { productsApi } from "../helpers/const";
 
 export const HomeContext = React.createContext();
@@ -40,7 +40,7 @@ function HomeProvider({ children }) {
   const [filterByPrice, setFilterByPrice] = React.useState([0, 999999]);
   const [minmax, setMinMax] = React.useState([0, 99999]);
 
-  const limit = 3;
+  const limit = 9;
   const [pagesCount, setPagesCount] = React.useState(1);
   const [currentPage, setCurrentPage] = React.useState(1);
 

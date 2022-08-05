@@ -13,7 +13,7 @@ import { HomeContext } from "../contexts/HomeProvider";
 function BasketPage() {
   const { basketProducts, getProductsFromBasket } =
     React.useContext(HomeContext);
-  console.log(basketProducts);
+
   React.useEffect(() => {
     getProductsFromBasket();
   }, []);
@@ -25,10 +25,10 @@ function BasketPage() {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>Название</TableCell>
+              <TableCell>Наименование</TableCell>
               <TableCell>Фото</TableCell>
-              <TableCell>Цена</TableCell>
-              <TableCell>Кол.во</TableCell>
+              <TableCell>Стоимость</TableCell>
+              <TableCell>Количество</TableCell>
               <TableCell>Сумма</TableCell>
             </TableRow>
           </TableHead>
