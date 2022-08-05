@@ -8,9 +8,15 @@ import Navbar from "react-bootstrap/Navbar";
 import { Badge, IconButton } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { HomeContext } from "../contexts/HomeProvider";
-
+import SearchIcon from "@mui/icons-material/Search";
 function MenuNavbar() {
-  const { basketCount } = React.useContext(HomeContext);
+  const { basketCount, setSearchWord, searchWord, getProducts } =
+    React.useContext(HomeContext);
+
+  React.useEffect(() => {
+    getProducts();
+  }, [searchWord]);
+
   return (
     <div>
       <Navbar bg="light" expand="lg">
@@ -48,7 +54,12 @@ function MenuNavbar() {
                 placeholder="Поиск"
                 className="me-2"
                 aria-label="Search"
+                value={searchWord}
+                onChange={(e) => {
+                  setSearchWord(e.target.value);
+                }}
               />
+
               <Button variant="outline-secondary">Поиск</Button>
             </Form>
             <Link to="/basket">

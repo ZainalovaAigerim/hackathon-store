@@ -9,13 +9,22 @@ import {
   TableFooter,
 } from "@mui/material";
 import { HomeContext } from "../contexts/HomeProvider";
+import HighlightOffRoundedIcon from "@mui/icons-material/HighlightOffRounded";
 
 function BasketPage() {
-  const { basketProducts, getProductsFromBasket } =
-    React.useContext(HomeContext);
+  const {
+    basketProducts,
+    getProductsFromBasket,
+    deleteProductFromBasket,
+    getProducts,
+  } = React.useContext(HomeContext);
   console.log(basketProducts);
   React.useEffect(() => {
     getProductsFromBasket();
+  }, []);
+
+  React.useEffect(() => {
+    getProducts();
   }, []);
 
   return (
@@ -30,6 +39,7 @@ function BasketPage() {
               <TableCell>Цена</TableCell>
               <TableCell>Кол.во</TableCell>
               <TableCell>Сумма</TableCell>
+              <TableCell>Удалить</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -41,7 +51,15 @@ function BasketPage() {
                 </TableCell>
                 <TableCell>{item.price}</TableCell>
                 <TableCell>{item.count}</TableCell>
+
                 <TableCell>{item.subPrice}</TableCell>
+                <TableCell>
+                  <HighlightOffRoundedIcon
+                    onClick={() => {
+                      deleteProductFromBasket(item.id);
+                    }}
+                  />
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
